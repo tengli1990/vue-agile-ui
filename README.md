@@ -7,10 +7,13 @@ npm install vue-agile-ui
 ```
 
 ### 引用
-```
+```javascript
 import VueAgileUi from 'vue-agile-ui'
 Vue.use(VueAgileUi, options)
-options:可选参数
-  options.rem     Boolean 是否启用rem布局
-  options.prefix  String 全局组件调用前缀 默认：agile  例如：<agile-button></agile-button> 调用button组件
+//参数说明
+options = {
+  rem:true     // Boolean 是否启用rem布局
+  prefix:'dk'  // String 全局组件调用前缀 默认：agile  例如：<dk-button></dk-button> 调用button组件
+}
+  
 ```
