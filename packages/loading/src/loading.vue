@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'dk-loading'
+  name: 'agile-loading'
 }
 </script>
 

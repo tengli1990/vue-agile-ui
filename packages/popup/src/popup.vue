@@ -12,7 +12,7 @@
 </template>
 <script>
 export default {
-  name: 'dk-popup',
+  name: 'agile-popup',
   props: {
     animation: {
       type: String,

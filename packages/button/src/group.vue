@@ -5,9 +5,8 @@
 </template>
 
 <script>
-const COMPONENT_NAME = 'dk-button-group'
 export default {
-  name: COMPONENT_NAME,
+  name: 'agile-button-group',
   props: {
     layout: {
       type: String,

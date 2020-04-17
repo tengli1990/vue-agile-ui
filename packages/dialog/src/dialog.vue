@@ -19,7 +19,7 @@ export default {
   components: {
     [Popup.name]: Popup
   },
-  name: 'dk-dialog',
+  name: 'agile-dialog',
   data () {
     return {
       visible: false,

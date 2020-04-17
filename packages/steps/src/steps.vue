@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'dk-steps',
+  name: 'agile-steps',
   props: {
     value: {
       type: Array,

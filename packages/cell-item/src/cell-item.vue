@@ -27,9 +27,8 @@
 </template>
 
 <script>
-const COMPONENT_NAME = 'dk-cell-item'
 export default {
-  name: COMPONENT_NAME,
+  name: 'agile-cell-item',
   props: {
     title: {
       type: String,

@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'dk-form-group',
+  name: 'agile-form-group',
   provide: {
     rootGroup: {
       default: null

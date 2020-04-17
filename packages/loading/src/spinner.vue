@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'dk-spinner',
+  name: 'agile-spinner',
   props: {
     size: {
       type: String,

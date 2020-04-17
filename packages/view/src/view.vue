@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'dk-view',
+  name: 'agile-view',
   props: {
     child: {
       type: [Boolean],

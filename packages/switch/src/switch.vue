@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-  name: 'dk-switch',
+  name: 'agile-switch',
   props: {
     value: {
       type: null,

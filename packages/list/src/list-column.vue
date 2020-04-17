@@ -26,7 +26,7 @@
 <script>
 
 export default {
-  name: 'dk-list-column',
+  name: 'agile-list-column',
   props: {
     type: {
       type: String,

@@ -32,7 +32,7 @@ export default {
   components: {
     [Icon.name]: Icon
   },
-  name: 'dk-radio',
+  name: 'agile-radio',
   props: {
     value: '',
     name: '',

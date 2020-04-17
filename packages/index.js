@@ -67,8 +67,8 @@ import {
 /**
  * @module 脚本方法
  */
-import Dialog from '../dialog'
-import Toast from '../toast'
+import Dialog from './dialog'
+import Toast from './toast'
 
 // const version = '1.0.0'
 const components = [
@@ -112,7 +112,7 @@ const install = function (Vue, config = {}) {
   // })
   components.forEach(Component => {
     if (config.prefix) {
-      Component.name = Component.name.replace(/^dk/, config.prefix)
+      Component.name = Component.name.replace(/^agile/, config.prefix)
     }
     Vue.component(Component.name, Component)
   })
@@ -123,7 +123,7 @@ const install = function (Vue, config = {}) {
   }
 }
 
-const DkVueUi = {
+const VueAgileUi = {
   /* eslint-disable no-undef */
   install
 }
@@ -132,14 +132,14 @@ components.forEach((Component) => {
   const name = utils.processComponentName(Component, {
     firstUpperCase: true
   })
-  DkVueUi[name] = Component
+  VueAgileUi[name] = Component
 })
 
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 };
 
-export default DkVueUi
+export default VueAgileUi
 
 export {
   Navigation,

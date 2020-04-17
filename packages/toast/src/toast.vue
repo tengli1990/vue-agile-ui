@@ -3,9 +3,9 @@
     <dk-popup v-model="visible" :animation="animation" :opacity="0" :hasMask="hasMask" :maskClosable="false">
        <div class="m-toast-content">
           <div class="text">
-            <dk-icon class='icon-left' name="selected" v-if="type==='success'"></dk-icon>
-            <dk-icon class='icon-left' name="close-solid" v-if="type==='failed'"></dk-icon>
-            <dk-spinner color="light" v-if="type==='loading'"></dk-spinner>
+            <agile-icon class='icon-left' name="selected" v-if="type==='success'" />
+            <agile-icon class='icon-left' name="close-solid" v-if="type==='failed'" />
+            <agile-spinner color="light" v-if="type==='loading'" />
             {{content}}
           </div>
        </div>
@@ -21,7 +21,7 @@ export default {
     [Popup.name]: Popup,
     [Icon.name]: Icon
   },
-  name: 'dk-toast',
+  name: 'agile-toast',
   data () {
     return {
       visible: false,

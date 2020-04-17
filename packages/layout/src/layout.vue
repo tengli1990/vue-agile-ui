@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'dk-layout',
+  name: 'agile-layout',
   data () {
     return {
 

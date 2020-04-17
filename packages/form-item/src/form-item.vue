@@ -30,7 +30,7 @@ const INPUT_TYPE_MONEY = 'money'
 const INPUT_TYPE_TEL = 'tel'
 const INPUT_TYPE_TEXT = 'text'
 export default {
-  name: 'dk-form-item',
+  name: 'agile-form-item',
   inject: {
     rootField: {
       default: null

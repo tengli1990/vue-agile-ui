@@ -48,7 +48,7 @@ const DEFAULT_FORMATS = {
 
 }
 export default {
-  name: 'dk-picker',
+  name: 'agile-picker',
   props: {
     value: null,
     options: {

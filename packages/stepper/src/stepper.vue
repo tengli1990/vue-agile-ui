@@ -9,9 +9,8 @@
 </template>
 
 <script>
-const COMPONENT_NAME = 'dk-stepper'
 export default {
-  name: COMPONENT_NAME,
+  name: 'agile-stepper',
   props: {
     value: {
       type: [Number, String],

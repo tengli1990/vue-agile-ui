@@ -12,7 +12,7 @@
 <script>
 import ListBody from './list-body'
 export default {
-  name: 'dk-list',
+  name: 'agile-list',
   components: { ListBody },
   props: {
     data: {

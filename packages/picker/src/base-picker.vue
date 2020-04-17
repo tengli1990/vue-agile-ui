@@ -50,7 +50,7 @@ const EVENT_CONFIRM = 'confirm'
 const EVENT_CANCEL = 'cancel'
 
 export default {
-  name: 'dk-base-picker',
+  name: 'agile-base-picker',
   props: {
     data: {
       type: Array,

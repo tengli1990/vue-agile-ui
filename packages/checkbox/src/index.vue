@@ -26,7 +26,7 @@ export default {
   components: {
     [Icon.name]: Icon
   },
-  name: 'dk-checkbox',
+  name: 'agile-checkbox',
   inject: {
     rootGroup: {
       default: null

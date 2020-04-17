@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'dk-navigation',
+  name: 'agile-navigation',
   props: {
     title: {
       type: String,

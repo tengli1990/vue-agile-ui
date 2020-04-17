@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'dk-field',
+  name: 'agile-field',
   props: {
     title: {
       type: String,

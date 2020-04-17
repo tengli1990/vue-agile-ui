@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'dk-icon',
+  name: 'agile-icon',
   props: {
     name: {
       type: String,

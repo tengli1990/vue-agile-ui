@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'dk-tag',
+  name: 'agile-tag',
   props: {
     shape: {
       type: String,

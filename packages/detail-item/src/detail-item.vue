@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'dk-detail-item',
+  name: 'agile-detail-item',
   inject: {
     rootField: {
       default: null

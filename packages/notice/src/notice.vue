@@ -8,7 +8,7 @@
     </div>
     <div class="m-notice-right">
       <span class="m-notice-close" v-if='close' @click="onClose()">
-        <dk-icon name="close"></dk-icon>
+        <agile-icon name="close"></agile-icon>
       </span>
     </div>
   </div>
@@ -20,7 +20,7 @@ export default {
   components: {
     [Icon.name]: Icon
   },
-  name: 'dk-notice',
+  name: 'agile-notice',
   props: {
     type: {
       type: String,
