@@ -1,7 +1,7 @@
 <template>
   <div class="m-notice" :class="[initClass,setAttr]" :style='setNoticeStyle' v-if="visible">
     <div class="m-notice-left">
-      <dk-icon v-if="icon" class="m-notice-icon" :name="icon"></dk-icon>
+      <agile-icon v-if="icon" class="m-notice-icon" :name="icon"  />
     </div>
     <div class="m-notice-content">
       <slot>{{text}}</slot>

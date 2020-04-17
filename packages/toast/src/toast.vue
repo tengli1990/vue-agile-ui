@@ -1,6 +1,6 @@
 <template>
   <div class='m-toast' :class="[initClass]">
-    <dk-popup v-model="visible" :animation="animation" :opacity="0" :hasMask="hasMask" :maskClosable="false">
+    <agile-popup v-model="visible" :animation="animation" :opacity="0" :hasMask="hasMask" :maskClosable="false">
        <div class="m-toast-content">
           <div class="text">
             <agile-icon class='icon-left' name="selected" v-if="type==='success'" />
@@ -9,7 +9,7 @@
             {{content}}
           </div>
        </div>
-    </dk-popup>
+    </agile-popup>
   </div>
 </template>
 

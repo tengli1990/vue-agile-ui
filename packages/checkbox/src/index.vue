@@ -2,8 +2,8 @@
   <div class="m-checkbox" :class="[setInitClass,getTemplate]" @click='onClick()'>
     <div class="m-checkbox-left">
       <template v-if=" geticonPositionPos === 'front'">
-        <dk-icon class="selected" v-if="isActive" name="selected"></dk-icon>
-        <dk-icon class="un-selected" v-else name="unselect"></dk-icon>
+        <agile-icon class="selected" v-if="isActive" name="selected" />
+        <agile-icon class="un-selected" v-else name="unselect"> />
       </template>
 
     </div>
@@ -14,8 +14,8 @@
     <div class="m-checkbox-right">
       <slot name="right"></slot>
       <template v-if=" geticonPositionPos === 'behind'">
-        <dk-icon class="selected" v-if="isActive" name="selected"></dk-icon>
-        <dk-icon class="un-selected" v-else name="unselect"></dk-icon>
+        <agile-icon class="selected" v-if="isActive" name="selected" />
+        <agile-icon class="un-selected" v-else name="unselect" />
       </template>
     </div>
   </div>

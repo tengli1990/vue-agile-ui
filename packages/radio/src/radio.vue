@@ -3,11 +3,11 @@
     <div class="m-radio-left" v-if="$slots['left'] || iconPosLeft || payment">
       <slot name='left'>
         <template v-if="iconPosLeft">
-          <dk-icon v-if="isActive" class="selected" name="selected"></dk-icon>
-          <dk-icon v-else class="selected" name="unselect"></dk-icon>
+          <agile-icon v-if="isActive" class="selected" name="selected"></agile-icon>
+          <agile-icon v-else class="selected" name="unselect"></agile-icon>
         </template>
         <template v-if="payment">
-          <dk-icon class="payment" :name="payment" :color="getPaymentTypeColor"></dk-icon>
+          <agile-icon class="payment" :name="payment" :color="getPaymentTypeColor"></agile-icon>
         </template>
       </slot>
 
@@ -19,8 +19,8 @@
     <div class="m-radio-right" v-if="$slots['right'] || iconPosRight">
       <slot name='right'>
         <template v-if="iconPosRight">
-          <dk-icon v-if="isActive" class="selected" name="selected"></dk-icon>
-          <dk-icon v-else class="selected" name="unselect"></dk-icon>
+          <agile-icon v-if="isActive" class="selected" name="selected"></agile-icon>
+          <agile-icon v-else class="selected" name="unselect"></agile-icon>
         </template>
       </slot>
     </div>

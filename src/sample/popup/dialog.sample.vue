@@ -27,6 +27,7 @@ export default {
   },
   methods: {
     dialog (animation) {
+      console.log(this.$dialog)
       this.$dialog({
         title: '标题',
         content: '这是一个“' + animation + '”动画弹出方式',

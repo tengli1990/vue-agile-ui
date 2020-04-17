@@ -1,6 +1,6 @@
 <template>
   <div class="m-dialog px-dialog" v-show="visibleBox">
-    <dk-popup v-model='visible' @close='dialogCallback' :radius='radius' :hasMask='hasMask' :animation='animation'
+    <agile-popup v-model='visible' @close='dialogCallback' :radius='radius' :hasMask='hasMask' :animation='animation'
       :maskClosable='maskClosable'>
       <div class="m-dialog-box">
         <div class="m-dialog-title" v-if="title">{{title}}</div>
@@ -10,7 +10,7 @@
            <button class="confirm" @click="dialogCallback('confirm')">{{confirmText}}<span v-if="confirmCountDown">{{this.confirmCountDown}}</span></button>
         </div>
       </div>
-    </dk-popup>
+    </agile-popup>
   </div>
 </template>
 <script>

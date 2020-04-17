@@ -3,7 +3,6 @@
     <div class="m-navigation-top-bar"></div>
     <div class="m-navigation-body" :class="[initBodyClass]">
       <div class="m-navigation-left">
-        <!-- <dk-icon class='m-back' name="return" @click="onBack()"></dk-icon> -->
         <span class='m-back' @click="onBack()">返回</span>
         <slot name='left'></slot>
       </div>

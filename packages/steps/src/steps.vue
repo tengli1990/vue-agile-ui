@@ -3,7 +3,7 @@
     <div class="m-step-item" v-for="(item,index) in value" :key="index">
       <div class="m-step-body">
         <div class="icon-wrap">
-          <!-- <dk-icon name='duigou'></dk-icon> -->
+          <!-- <agile-icon name='duigou'></agile-icon> -->
         </div>
         <div class="bar"></div>
         <div class="content-wrap">
