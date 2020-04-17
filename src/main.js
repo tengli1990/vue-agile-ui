@@ -13,7 +13,7 @@ import VueAgileUi from '../packages'
 
 Vue.config.productionTip = false
 
-Vue.use(VueAgileUi, {rem: true,prefix:'dk'})// 引入md文件
+Vue.use(VueAgileUi, {rem: true, prefix: 'dk'})// 引入md文件
 
 // 使用md文件
 Vue.prototype.md2html = (md) => {
