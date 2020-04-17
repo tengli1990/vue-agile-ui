@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'dk-button',
+  name: 'agile-button',
   props: {
     disabled: {
       type: Boolean,

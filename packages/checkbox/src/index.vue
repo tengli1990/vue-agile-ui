@@ -3,7 +3,7 @@
     <div class="m-checkbox-left">
       <template v-if=" geticonPositionPos === 'front'">
         <agile-icon class="selected" v-if="isActive" name="selected" />
-        <agile-icon class="un-selected" v-else name="unselect"> />
+        <agile-icon class="un-selected" v-else name="unselect" />
       </template>
 
     </div>

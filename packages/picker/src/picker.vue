@@ -81,7 +81,7 @@ export default {
   watch: {
     options: {
       handler (newVal, oldVal) {
-        console.log('watch')
+        // console.log('watch')
         this.updateData()
       },
       immediate: true
@@ -159,7 +159,7 @@ export default {
   methods: {
     updateData () {
       const initData = this._getterData()
-      console.log('initData', initData)
+      // console.log('initData', initData)
       this.pickerIndex = initData.index
       this.pickerData = initData.data
       this.lastIndex = initData.index

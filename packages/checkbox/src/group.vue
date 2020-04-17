@@ -7,7 +7,7 @@
 <script>
 import Checkbox from './index.vue'
 export default {
-  name: 'dk-checkbox-group',
+  name: 'agile-checkbox-group',
   components: {
     [Checkbox.name]: Checkbox
   },
@@ -52,7 +52,7 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$slots)
+    // console.log(this.$slots)
   },
   methods: {
     unCheck (val) {

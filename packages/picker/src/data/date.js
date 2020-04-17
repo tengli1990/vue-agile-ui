@@ -64,7 +64,6 @@ yearData.map((year) => {
     month.children = getDays(year.slice(), month.value.slice())
   })
 
-  console.log(JSON.parse(JSON.stringify(item)))
   dateData.push(JSON.parse(JSON.stringify(item)))
 })
 

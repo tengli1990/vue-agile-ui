@@ -6,9 +6,9 @@ import router from './router'
 import showdown from 'showdown'
 
 // import './assets/common/common.less'
-// import VueAgileUi from '../packages'
-import VueAgileUi from '../lib/vue-agile-ui.min'
-import '../lib/vue-agile-ui.min.css'
+import VueAgileUi from '../packages'
+// import VueAgileUi from '../lib/vue-agile-ui.min'
+// import '../lib/vue-agile-ui.min.css'
 // import VueAgileUi from 'vue-agile-ui'
 
 Vue.config.productionTip = false

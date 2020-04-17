@@ -19,7 +19,7 @@ export default {
   components: {
     [Popup.name]: Popup
   },
-  name: 'agile-dialog',
+  name: 'dk-dialog',
   data () {
     return {
       visible: false,
@@ -42,7 +42,7 @@ export default {
   },
   watch: {
     $route (val) {
-      console.log('路由变化')
+      // console.log('路由变化')
     }
   },
   methods: {

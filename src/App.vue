@@ -82,7 +82,7 @@ export default {
         arr.push(obj[key])
       }
       // arr.push(obj)
-      console.log(arr)
+      // console.log(arr)
       console.log(process.env.NODE_ENV)
       return arr
     },

@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-  name: 'dk-text-area',
+  name: 'agile-text-area',
   props: {
     placeholder: {
       type: String,
@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     changeInput ($event) {
-      console.log('this.lenght', this.length)
+      // console.log('this.lenght', this.length)
       this.$emit('input', $event.target.value)
     }
   }
