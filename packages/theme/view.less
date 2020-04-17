@@ -1,0 +1,66 @@
+.m-view {
+  height: 100%;
+  width: 750px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &.is-child {
+    background: #f7f8f9;
+    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+  }
+}
+
+// default right
+.m-view-right-enter {
+  opacity: 0;
+  transform: translate(50%, 0);
+}
+
+.m-view-right-enter-active {
+  transition: 0.3s;
+}
+
+// child right
+.m-view-child-right-enter {
+  opacity: 0;
+  transform: translate(100%, 0);
+}
+
+.m-view-child-right-enter-active {
+  transition: 0.3s;
+}
+
+.m-view-child-right-leave-active {
+  transform: translate(100%, 0);
+  transition: 0.3s;
+}
+
+// default left
+.m-view-left-enter {
+  opacity: 0;
+  transform: translate(-50%, 0);
+}
+
+.m-view-left-enter-active {
+  transition: 0.3s;
+}
+
+// child left
+.m-view-child-left-enter {
+  opacity: 0;
+  transform: translate(-100%, 0);
+}
+
+.m-view-child-left-enter-active {
+  transition: 0.3s;
+}
+
+.m-view-child-left-leave-active {
+  transform: translate(-100%, 0);
+  transition: 0.3s;
+}

@@ -1,0 +1,96 @@
+.m-spinner {
+  line-height:1;
+  padding:10px 0;
+  font-size:28px;
+  .m-spinner-list {
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+
+    .m-spinner-item {
+      position: absolute;
+      left: 44.5%;
+      top: 37%;
+      width: 3px;
+      height: 25%;
+      border-radius: 50%/20%;
+      opacity: 0.25;
+      background-color: #000;
+      animation: spinner-fade 1s linear infinite;
+      /* Define two variables as the loop limits */
+      @from: 1;
+      @to: 12;
+
+      /* Create a Parametric mixin and add a guard operation */
+      .loop(@index) when(@index =< @to) {
+        &:nth-child(@{index}) {
+          animation-delay: (@index - 1) /12s; // 需要带着单位计算
+          transform: rotate(30deg * (@index - 6)) translateY(-150%);
+        }
+
+        .loop(@index + 1);
+      }
+
+      /* the mixin is called, css outputted and iterations called */
+      .loop(@from);
+    }
+  }
+
+  &.is-white .m-spinner-item{
+    background-color:#fff;
+  }
+  &.is-light .m-spinner-item{
+    background-color:#f2f2f2;
+  }
+  &.is-small {
+    .m-spinner-list{
+      width:1em;
+      height:1em;
+      line-height: 1em;
+    }
+    .m-spinner-text{
+      line-height: 1em;
+    }
+  }
+  &.is-standard {
+    .m-spinner-list{
+      width:1.5em;
+      height:1.5em;
+    }
+    .m-spinner-text{
+      line-height: 1.5em;
+    }
+  }
+  &.is-big {
+    .m-spinner-list{
+      width:2em;
+      height:2em;
+    }
+    .m-spinner-text{
+      line-height: 2em;
+    }
+  }
+
+  .m-spinner-text{
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+  }
+}
+
+
+// 定义关键帧
+@keyframes spinner-fade {
+  0% {
+    opacity: 0.95;
+  }
+
+  50% {
+    opacity: 0.65;
+  }
+
+  100% {
+    opacity: 0.25;
+  }
+}

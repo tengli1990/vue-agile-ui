@@ -1,0 +1,112 @@
+.m-checkbox {
+  font-size: 24px;
+  display: inline-flex;
+  min-height: 60px;
+  padding: 0 35px;
+  margin: 10px 0;
+  line-height: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 100px;
+  background: #fff;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .m-checkbox-left {
+    padding-right: 10px;
+  }
+
+  .m-checkbox-label {
+    flex: 1;
+    line-height: 1.35;
+
+    .m-checkbox-label-title {
+      color: @grey
+    }
+
+    .m-checkbox-label-brief {
+      color: @greyLight
+    }
+  }
+
+  .m-checkbox-right {
+    padding-left: 10px;
+    color:#666;
+  }
+
+  .selected,.un-selected {
+    color: #ccc;
+    font-size:32px;
+  }
+
+  &.is-active {
+    border: 1px solid @primaryLighter;
+    background: @primaryLighter;
+    color: @primary;
+
+    .m-checkbox-label-title {
+      color: @primary
+    }
+
+    .selected {
+      color: @primary
+    }
+  }
+
+  &.is-disable {
+    opacity: .5;
+  }
+
+}
+
+// list 模板
+.m-checkbox.list {
+  position: relative;
+  display: flex;
+  border: none;
+  line-height: 1;
+  padding: 50px 0;
+  margin: 0;
+
+  &.is-active {
+    background: none;
+  }
+
+  &:not(:last-child).m-checkbox.list:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background: #d8d8d8;
+    transform: scale(1, .5)
+  }
+
+}
+
+
+// radio 模板
+.m-checkbox.radio {
+  position: relative;
+  border: none;
+  line-height: 1;
+  padding: 10px 0;
+  margin: 0;
+
+  &.is-active {
+    background: none;
+  }
+}
+
+// group
+.m-checkbox-group{
+  &.is-inline{
+    display: inline-block;
+    overflow: hidden;
+  }
+}

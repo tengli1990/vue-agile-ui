@@ -1,0 +1,59 @@
+.m-tag {
+  display: inline-block;
+
+  .m-tag-content {
+    padding: 3px 20px;
+    line-height:1.4;
+    font-size: 24px;
+    color:#fff;
+  }
+
+  .type-primary{
+    background:@primary;
+    &.is-outline{
+      color:@primary;
+      border:1px solid @primary
+    }
+  }
+
+  .type-warning{
+    background:@warning;
+    &.is-outline{
+      color:@warning;
+      border:1px solid @warning
+    }
+  }
+
+  .type-danger{
+    background:@danger;
+    &.is-outline{
+      color:@danger;
+      border:1px solid @danger
+    }
+  }
+
+  .type-activity{
+    background:@activity;
+    &.is-outline{
+      color:@activity;
+      border:1px solid @activity
+    }
+  }
+
+  .is-outline{
+    background:none;
+  }
+
+  .is-fillet {
+    border-radius: 6px;
+  }
+
+  .is-cycle {
+    border-radius: 50px;
+  }
+
+  .sharp-left-bottom {
+    border-bottom-left-radius: 0;
+  }
+
+}

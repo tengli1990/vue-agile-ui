@@ -1,0 +1,135 @@
+.m-picker {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 28px;
+  background-color: rgba(37, 38, 45, .4);
+}
+
+.m-picker .m-picker-panel {
+  position: absolute;
+  z-index: 600;
+  bottom: 0;
+  width: 100%;
+  height: 480px;
+  background: #fff
+}
+
+.m-picker .m-picker-panel .m-picker-choose {
+  position: relative;
+  height: 90px;
+  border-bottom:1px solid #efefef;
+  color: #999;
+}
+
+.m-picker .m-picker-panel .m-picker-choose .m-picker-title {
+  margin: 0;
+  line-height: 90px;
+  font-weight: 400;
+  text-align: center;
+  font-size: 32px;
+  color: #333
+}
+
+.m-picker .m-picker-panel .m-picker-choose .cancel,
+.m-picker .m-picker-panel .m-picker-choose .confirm {
+  position: absolute;
+  top: 0;
+  padding:0 32px;
+  font-size: 28px;
+  line-height: 90px;
+}
+
+.m-picker .m-picker-panel .m-picker-choose .confirm {
+  right: 0;
+  color: #007bff
+}
+
+.m-picker .m-picker-panel .m-picker-choose .confirm:active {
+  color: #5aaaff
+}
+
+.m-picker .m-picker-panel .m-picker-choose .cancel {
+  left: 0
+}
+
+.m-picker .m-picker-panel .m-picker-choose .cancel:active {
+  color: #c2c2c2
+}
+
+.m-picker .m-picker-panel .m-picker-content {
+  position: relative;
+  top: 20px
+}
+
+.m-picker .m-picker-panel .m-picker-content .mask-bottom,
+.m-picker .m-picker-panel .m-picker-content .mask-top {
+  z-index: 10;
+  width: 100%;
+  height: 136px;
+  pointer-events: none;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0)
+}
+
+.m-picker .m-picker-panel .m-picker-content .mask-top {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, .4), hsla(0, 0%, 100%, .8))
+}
+
+.m-picker .m-picker-panel .m-picker-content .mask-bottom {
+  position: absolute;
+  bottom: 1px;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, .4), hsla(0, 0%, 100%, .8))
+}
+
+.m-picker .m-picker-panel .wheel-wrapper {
+  display: flex;
+  padding: 0 32px
+}
+
+.m-picker .m-picker-panel .wheel-wrapper .wheel {
+  -ms-flex: 1 1 1e-9px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-flex-basis: 1e-9px;
+  -ms-flex-preferred-size: 1e-9px;
+  flex-basis: 1e-9px;
+  width: 1%;
+  height: 346px;
+  overflow: hidden;
+  font-size: 32px
+}
+
+.m-picker .m-picker-panel .wheel-wrapper .wheel .wheel-scroll {
+  padding: 0;
+  margin-top: 136px;
+  line-height: 72px;
+  list-style: none
+}
+
+.m-picker .m-picker-panel .wheel-wrapper .wheel .wheel-scroll .wheel-item {
+  list-style: none;
+  height: 72px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #333;
+  .invalid{
+    color:#ccc;
+  }
+}
+
+.m-picker .m-picker-panel .wheel-wrapper .wheel .wheel-scroll .wheel-item.wheel-disabled-item {
+  opacity: .2
+}
+
+.m-picker .m-picker-footer {
+  height: 20px
+}

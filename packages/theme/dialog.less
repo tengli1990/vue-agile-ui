@@ -1,0 +1,64 @@
+;
+
+/* basic component dialog */
+.m-dialog {
+  position: relative;
+  z-index: 1000;
+  
+  .m-popup-box {
+    width: 80%;
+    
+  }
+}
+
+.m-dialog-box {
+  position: relative;
+  z-index: 1000;
+  min-width: 80%;
+  padding: 20px 0 0;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(100, 100, 100, .1);
+}
+
+.m-dialog-title {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+.m-dialog-content {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 28px;
+  color: #666;
+
+  .left {
+    text-align: left;
+  }
+}
+
+.m-dialog .m-button-group {
+  padding: 30px 20px 0;
+  border-top: 1px solid #eaeaea;
+}
+
+.m-dialog-button{
+  display: flex;
+  
+  button{
+    font-size:32px;
+    color:@primary;
+    line-height:100px;
+    flex:1;
+  }
+}
+
+.px-dialog{
+  .m-dialog-button{
+    border-top:1px solid #eaeaea;
+    .cancel{
+      border-right:1px solid #eaeaea
+    }
+  }
+}

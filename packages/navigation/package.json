@@ -1,0 +1,13 @@
+{
+    "name": "dk-navigation",
+    "description": "",
+    "version": "0.1.0",
+    "main": "lib/index.js",
+    "author": "liteng",
+    "homepage": "",
+    "license": "MIT",
+    "repository": "",
+    "dependencies": {
+    }
+  }
+  

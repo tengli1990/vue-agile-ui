@@ -1,0 +1,28 @@
+.m-notice {
+  display: flex;
+  padding: 12px 30px;
+  min-height: 64px;
+  font-size:24px;
+  align-items: center;
+
+  .m-notice-content {
+    flex: 1;
+  }
+
+  .m-notice-icon{
+    margin-right: 10px;
+  }
+
+  &.align-center {
+    text-align: center;
+  }
+
+  &.type-warning {
+    background: @notice-warning-bg;
+    color: @notice-warning;
+  }
+
+  &.is-round{
+    border-radius:32px;
+  }
+}

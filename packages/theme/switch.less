@@ -1,0 +1,46 @@
+.m-switch {
+    position: relative;
+    width: 90px;
+    height:50px;
+    background:#ccc;
+    border-radius:100px;
+    transition:.2s ease-out;
+    line-height:50px;
+    text-align: right;
+    font-size:24px;
+    padding: 0 14px;
+    color:#fff;
+    &.is-inline{
+      display: inline-block;
+    }
+}
+
+.m-switch:before,
+.m-switch:after{
+    content:'';
+    position: absolute;
+}
+.m-switch:after{
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition:.2s ease-out;
+}
+
+.m-switch.active {
+  background-color: @primary;
+  transition:.2s ease-in;
+  text-align: left;
+  // color:#fff;
+}
+.m-switch.active:after{
+    transform: translateX(100%);
+    transition:.2s ease-in;
+}
+
+.m-switch.disabled{
+    opacity: .3;
+}

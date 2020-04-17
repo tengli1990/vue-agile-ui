@@ -1,0 +1,119 @@
+@buttonTypeList: primary, warning, danger, disabled;
+@buttonTypebg: @button-primary-bg, @button-warning-bg, @button-danger-bg, @button-disabled-bg;
+@buttonTypetext: @button-primary-text, @button-warning-text, @button-danger-text, @button-disabled-text;
+
+.buttonTypeFn(@type, @bg, @text) {
+  .m-button-@{type} {
+    background: @bg;
+    border-color: @text;
+    color: #fff;
+  }
+
+  .m-button-@{type}.m-button-outline {
+    background: none;
+    color: @text;
+  }
+}
+
+.m-button {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0 25px;
+  line-height: 90px;
+  font-size: 32px;
+  color: @button-default-text;
+  background: @button-default-bg;
+  border: 1px solid @button-default-border;
+  border-radius: 4px;
+
+  &.is-inactive {
+    opacity: .6
+  }
+
+  &.is-inline {
+    display: inline-block;
+    min-width: 150px;
+    width: initial;
+    width: auto;
+  }
+
+  &.is-disabled {
+    opacity: .5;
+    filter: grayscale(100%);
+    filter: gray;
+  }
+
+  &.m-button-large {
+    line-height: 90px;
+    padding: 0 40px;
+    min-width: 240px;
+    font-size: 32px;
+  }
+
+  &.m-button-small {
+    line-height: 70px;
+    font-size: 30px;
+  }
+
+  &.m-button-smaller {
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 24px;
+  }
+
+  &.m-button-round {
+    border-radius: 120px;
+  }
+}
+
+
+
+.loop(@i) when (@i < length(@buttonTypeList)+1) {
+  .buttonTypeFn(extract(@buttonTypeList, @i), extract(@buttonTypebg, @i), extract(@buttonTypetext, @i));
+  .loop(@i+1);
+}
+
+.loop(1);
+
+// group
+.m-button-group {
+  font-size: 0;
+
+  &.flex {
+    display: flex;
+    // padding: 0 15px;
+
+    .m-button {
+      flex: 1;
+      // margin: 0 10px;
+      margin-right: 20px;
+      min-width: 100px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &.block {
+    display: block;
+    padding: 0 30px;
+    text-align: center;
+
+    &.left {
+      text-align: left;
+    }
+
+    &.right {
+      text-align: right;
+    }
+  }
+
+  &.inline-block {
+    display: inline-block;
+    padding: 15px 25px;
+  }
+}

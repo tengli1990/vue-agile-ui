@@ -1,0 +1,78 @@
+.m-steps {
+  &.is-first-active {
+    .m-step-item:first-child .icon-wrap {
+      background:@primary;
+      background-size: 100% 100%;
+    }
+  }
+
+  .m-step-item:last-child {
+    .bar {
+      display: none
+    }
+  }
+
+  .m-step-body {
+    position: relative;
+    display: flex;
+    padding-top: 20px;
+
+    .icon-wrap {
+      position: relative;
+      z-index: 10;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background:#999;
+      background-size: 100% 100%;
+
+      i {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+      }
+    }
+
+    .bar {
+      position: absolute;
+      left: 16px;
+      width: 2px;
+      height: 100%;
+      // top: calc(15% + 36px);
+      background: #ededed;
+    }
+
+    .content-wrap {
+      padding-left: 36px;
+      padding-bottom: 50px;
+
+      line-height: 32px;
+
+      .m-step-title {
+        font-size: 30px;
+        color: #555;
+      }
+
+      .m-step-brief {
+        font-size: 26px;
+        padding-top: 15px;
+        color: #999;
+      }
+
+      .m-step-time {
+        padding-top: 15px;
+        font-size: 20px;
+        color: #999
+      }
+
+      .m-step-tab {
+        color: #3dbcc6;
+        padding-top: 15px;
+      }
+    }
+
+  }
+}
