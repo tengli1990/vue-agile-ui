@@ -1,3 +1,4 @@
+import './theme/index.scss'
 import './theme/index.less'
 import utils from './utils'
 import './utils/extend'

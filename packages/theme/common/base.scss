@@ -1,0 +1,65 @@
+@import "./var.scss";
+// @import "./fonts/iconfont.css";
+// @import "./keyframe.less";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'PingFang SC', "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", Tahoma, "宋体b8b体", "SimSun", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+body{
+  height: 100%;
+  font-size: 28px;
+  width: 750px;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+  resize: none;
+  border: none;
+  background:none;
+}
+
+/*
+* 间距预设
+**/
+
+.mt20 {
+  margin-top: 20px !important;
+}
+
+.ml20 {
+  margin-left: 20px !important;
+}
+
+/** 
+ * 缩略内容
+ * @explam .clamp-1
+ **/
+//  .clamp-1{
+//   overflow: hidden;
+//   text-overflow:ellipsis;
+//   white-space: nowrap;
+//  }
+// .baseClamp(@number) {
+//   .clamp-@{number} {
+//     display: -webkit-box !important;
+//     -webkit-box-orient: vertical;
+//     -webkit-line-clamp: @number;
+//     overflow: hidden;
+//   }
+// }
+// .loopClamp(@i) when (@i < 10) {
+//   .baseClamp(@i);
+//   .loopClamp(@i+1);
+// }
+// .loopClamp(1);

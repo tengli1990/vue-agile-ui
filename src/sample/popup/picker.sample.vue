@@ -4,10 +4,21 @@
       <dk-navigation slot="header" title="滑动选择器"></dk-navigation>
       <template slot='content'>
         <dk-field title="例子">
+           <dk-form-item title="123123" value='11'></dk-form-item>
+        </dk-field>
+        <dk-field title="例子">
           <dk-button-group class="mt20">
-            <dk-button @click='select1("select1Data")'>单列选择器示例</dk-button>
+            <dk-button @click='select1("select1Data")'>单列选择器示例1</dk-button>
           </dk-button-group>
           {{select1Data.selected}}
+          <dk-button-group class="mt20">
+            <dk-button @click='select1("select5Data")'>单列选择器示例5</dk-button>
+          </dk-button-group>
+          {{select5Data.selected}}
+          <dk-button-group class="mt20">
+            <dk-button @click='select1("select6Data")'>单列选择器示例6</dk-button>
+          </dk-button-group>
+          {{select6Data.selected}}
           <dk-button-group class="mt20">
             <dk-button @click='select1("select2Data")'>多级联动示例</dk-button>
           </dk-button-group>
@@ -80,6 +91,78 @@ export default {
         }],
         selected: [{
           'value': 4,
+          'name': '内蒙古自治区'
+        }]
+
+      },
+      select5Data: {
+        type: 'select',
+        title: '请选择单利数据',
+        sign: 'select5Data',
+        cols: 1,
+        options: [{
+          value: 100,
+          name: '北京市'
+        }, {
+          value: 101,
+          name: '河北省'
+        }, {
+          value: 102,
+          name: '山西省'
+        }, {
+          value: 103,
+          name: '内蒙古自治区'
+        }, {
+          value: 104,
+          name: '辽宁省'
+        }, {
+          value: 105,
+          name: '吉林省'
+        }, {
+          value: 106,
+          name: '黑龙江省'
+        }, {
+          value: 107,
+          name: '上海市'
+        }],
+        selected: [{
+          'value': 107,
+          'name': '内蒙古自治区'
+        }]
+
+      },
+      select6Data: {
+        type: 'select',
+        title: '请选择单利数据',
+        sign: 'select6Data',
+        cols: 1,
+        options: [{
+          value: 100,
+          name: '北京市'
+        }, {
+          value: 101,
+          name: '河北省'
+        }, {
+          value: 102,
+          name: '山西省'
+        }, {
+          value: 103,
+          name: '内蒙古自治区'
+        }, {
+          value: 104,
+          name: '辽宁省'
+        }, {
+          value: 105,
+          name: '吉林省'
+        }, {
+          value: 106,
+          name: '黑龙江省'
+        }, {
+          value: 107,
+          name: '上海市'
+        }],
+        selected: [{
+          'value': 107,
           'name': '内蒙古自治区'
         }]
 

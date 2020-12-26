@@ -1,4 +1,4 @@
-<template>
+  <template>
   <dk-layout>
      <dk-navigation slot="header">列表</dk-navigation>
      <template  slot="content">
@@ -9,6 +9,7 @@
           <dk-list-column label="年龄：" prop="age"></dk-list-column>
           <dk-list-column label="年龄：" prop="age"></dk-list-column>
           <dk-list-column label="年龄：" :column="2" prop="age"></dk-list-column>
+          <dk-list-column label="图片：" :column="2" prop="images"></dk-list-column>
           <dk-list-column label="年龄：" :column="2" prop="age"></dk-list-column>
           <dk-list-column label="年龄：" prop="age"></dk-list-column>
         </dk-list>
@@ -29,6 +30,7 @@ export default {
           desc: '一位伟人',
           address: '云南省普洱市景谷傣族彝族自治县工农路嘉美国际风尚中心3号楼5单元2803',
           mobile: '15810660233',
+          images: ['', ''],
           age: '28',
           status: '申请中'
         },
